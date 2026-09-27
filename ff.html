@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern & Minimalist Landing Page</title>
+    <!-- Tailwind CSS for robust, modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom smooth transition effects */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(229, 231, 235, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-indigo-600 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-indigo-200">
+                    N
+                </div>
+                <span class="text-xl font-bold tracking-tight text-slate-900">Nexus.io</span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+                <a href="#features" class="hover:text-indigo-600 transition-colors">Features</a>
+                <a href="#about" class="hover:text-indigo-600 transition-colors">About</a>
+                <a href="#contact" class="hover:text-indigo-600 transition-colors">Contact</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <button onclick="openModal('Sign In')" class="hidden sm:inline-flex text-sm font-medium text-slate-700 hover:text-indigo-600 px-4 py-2 transition-colors">
+                    Log in
+                </button>
+                <button onclick="openModal('Get Started')" class="bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium px-5 py-2.5 rounded-xl shadow-lg shadow-indigo-100 transition-all hover:scale-[1.02] active:scale-[0.98]">
+                    Get Started
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative overflow-hidden pt-20 pb-32 lg:pt-32 lg:pb-40">
+            <!-- Background decorative blur circles -->
+            <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-indigo-100/60 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute top-1/3 right-10 w-72 h-72 bg-blue-100/50 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="relative max-w-7xl mx-auto px-6 text-center">
+                <div class="inline-flex items-center space-x-2 bg-indigo-50 border border-indigo-100 text-indigo-700 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-8 animate-bounce">
+                    <span class="w-2 h-2 rounded-full bg-indigo-600"></span>
+                    <span>Version 2.0 Released</span>
+                </div>
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-slate-900 tracking-tight max-w-4xl mx-auto leading-[1.15]">
+                    Build better products <span class="bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">faster than ever.</span>
+                </h1>
+                <p class="mt-6 text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto font-normal leading-relaxed">
+                    Streamline your workflow, collaborate with modern teams, and scale your applications effortlessly with our next-generation platform.
+                </p>
+                <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <button onclick="openModal('Start Free Trial')" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-700 text-white font-medium px-8 py-4 rounded-xl shadow-xl shadow-indigo-200 transition-all hover:scale-[1.02] active:scale-[0.98]">
+                        Start Free Trial
+                    </button>
+                    <button onclick="openModal('Watch Demo')" class="w-full sm:w-auto bg-white hover:bg-slate-50 text-slate-700 font-medium px-8 py-4 rounded-xl border border-slate-200 shadow-sm transition-all hover:border-slate-300">
+                        Watch Live Demo
+                    </button>
+                </div>
+
+                <!-- Hero Mockup Preview -->
+                <div class="mt-16 max-w-5xl mx-auto rounded-2xl p-2 bg-white/40 border border-slate-200 shadow-2xl backdrop-blur-xl">
+                    <img src="https://placehold.co/1200x675/e2e8f0/475569?text=Dashboard+Preview+Interface" alt="Dashboard Preview" class="rounded-xl w-full h-auto object-cover shadow-sm" onerror="this.src='https://placehold.co/1200x675/e2e8f0/475569?text=Placeholder'" />
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="py-24 bg-white border-t border-slate-100">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-xs font-semibold text-indigo-600 uppercase tracking-widest mb-3">Capabilities</h2>
+                    <h3 class="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">Everything you need to succeed</h3>
+                    <p class="mt-4 text-slate-600 text-lg">Designed from the ground up for high-performance teams looking to optimize every aspect of their delivery.</p>
+                </div>
+
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Feature Card 1 -->
+                    <div class="group p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-indigo-100 hover:bg-white hover:shadow-xl hover:shadow-indigo-50/50 transition-all duration-300">
+                        <div class="w-12 h-12 rounded-xl bg-indigo-600/10 text-indigo-600 flex items-center justify-center font-bold text-lg mb-6 group-hover:scale-110 transition-transform">
+                            ⚡
+                        </div>
+                        <h4 class="text-xl font-semibold text-slate-900 tracking-tight">Lightning Fast</h4>
+                        <p class="mt-3 text-slate-600 leading-relaxed">
+                            Optimized architecture ensures sub-second responses and flawless synchronization across all devices globally.
+                        </p>
+                    </div>
+
+                    <!-- Feature Card 2 -->
+                    <div class="group p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-indigo-100 hover:bg-white hover:shadow-xl hover:shadow-indigo-50/50 transition-all duration-300">
+                        <div class="w-12 h-12 rounded-xl bg-violet-600/10 text-violet-600 flex items-center justify-center font-bold text-lg mb-6 group-hover:scale-110 transition-transform">
+                            🛡️
+                        </div>
+                        <h4 class="text-xl font-semibold text-slate-900 tracking-tight">Enterprise Security</h4>
+                        <p class="mt-3 text-slate-600 leading-relaxed">
+                            Bank-grade encryption, role-based access control, and absolute privacy compliance safeguard your sensitive data.
+                        </p>
+                    </div>
+
+                    <!-- Feature Card 3 -->
+                    <div class="group p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-indigo-100 hover:bg-white hover:shadow-xl hover:shadow-indigo-50/50 transition-all duration-300">
+                        <div class="w-12 h-12 rounded-xl bg-blue-600/10 text-blue-600 flex items-center justify-center font-bold text-lg mb-6 group-hover:scale-110 transition-transform">
+                            📊
+                        </div>
+                        <h4 class="text-xl font-semibold text-slate-900 tracking-tight">Advanced Analytics</h4>
+                        <p class="mt-3 text-slate-600 leading-relaxed">
+                            Gain deep operational clarity with intuitive real-time metrics, custom reports, and actionable business insights.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="space-y-4 md:col-span-1">
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-bold text-lg">
+                        N
+                    </div>
+                    <span class="text-lg font-bold text-white tracking-tight">Nexus.io</span>
+                </div>
+                <p class="text-sm leading-relaxed">
+                    Empowering modern organizations to build elegant digital products with speed and confidence.
+                </p>
+            </div>
+            <div>
+                <h5 class="text-white font-semibold text-sm tracking-wider uppercase mb-4">Product</h5>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#features" class="hover:text-white transition-colors">Overview</a></li>
+                    <li><a href="#features" class="hover:text-white transition-colors">Features</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Solutions</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Pricing</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-white font-semibold text-sm tracking-wider uppercase mb-4">Company</h5>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Press</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-white font-semibold text-sm tracking-wider uppercase mb-4">Stay Updated</h5>
+                <p class="text-sm mb-4">Subscribe to our newsletter for the latest updates and tips.</p>
+                <form onsubmit="handleSubscribe(event)" class="flex flex-col sm:flex-row gap-2">
+                    <input type="email" required placeholder="Enter your email" class="bg-slate-800 border border-slate-700 text-sm rounded-xl px-4 py-2.5 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 flex-1">
+                    <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium px-4 py-2.5 rounded-xl text-sm transition-colors">
+                        Join
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-slate-800 text-xs text-center flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 Nexus.io Inc. All rights reserved.</p>
+            <div class="flex space-x-6">
+                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="actionModal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-md w-full p-8 shadow-2xl relative transform transition-all scale-95 opacity-0" id="modalContainer">
+            <button onclick="closeModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-600 font-bold p-1">
+                ✕
+            </button>
+            <h3 id="modalTitle" class="text-2xl font-bold text-slate-900 tracking-tight mb-2">Action Prompt</h3>
+            <p id="modalDesc" class="text-slate-600 text-sm mb-6">You've selected to proceed. Enter your details below to continue.</p>
+            <div class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1">Email Address</label>
+                    <input type="email" placeholder="you@example.com" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-800 text-sm focus:outline-none focus:border-indigo-600">
+                </div>
+                <button onclick="submitModal()" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 rounded-xl shadow-lg shadow-indigo-100 transition-all">
+                    Continue
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal(actionName) {
+            const modal = document.getElementById('actionModal');
+            const container = document.getElementById('modalContainer');
+            const title = document.getElementById('modalTitle');
+            const desc = document.getElementById('modalDesc');
+
+            title.innerText = actionName;
+            desc.innerText = `Please provide your information to complete the "${actionName}" action.`;
+
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            setTimeout(() => {
+                container.classList.remove('scale-95', 'opacity-0');
+                container.classList.add('scale-100', 'opacity-100');
+            }, 10);
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('actionModal');
+            const container = document.getElementById('modalContainer');
+            container.classList.remove('scale-100', 'opacity-100');
+            container.classList.add('scale-95', 'opacity-0');
+            setTimeout(() => {
+                modal.classList.remove('flex');
+                modal.classList.add('hidden');
+            }, 200);
+        }
+
+        function submitModal() {
+            closeModal();
+            // Show a simple toast or notification effect here if desired
+        }
+
+        function handleSubscribe(event) {
+            event.preventDefault();
+            alert('Thank you for subscribing to our newsletter!');
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>
